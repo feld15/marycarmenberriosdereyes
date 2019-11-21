@@ -21,6 +21,28 @@
 	})
 });
 
+$(window).ready(function(){
+	var ancho = $(window).width();
+
+	if ( ancho < 1180 ) {
+	   $("#lace").text("Mary Carmen Berrios de Reyes");
+
+	} else {
+	   $("#lace").text("T.E.L Mary Carmen Berrios de Reyes");
+	}
+
+	// if(ancho > 900 ) {
+	// 	$("nav").css("display", "");
+	// 	$("nav").css("left", "");
+	// 	$("header").removeClass("bg-gradient");
+	//  }
+
+	if ( ancho < 700 ) {
+		$("#lace").text("M.C.B.R");
+ 
+	 }
+ });
+
 
 $(window).resize(function(){
 	var ancho = $(window).width();
